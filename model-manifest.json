@@ -1,0 +1,61 @@
+{
+  "version": "2026.10.07.gaze-demo",
+  "files": [
+    {
+      "file": "yolo11n.onnx",
+      "sha256": "fec8c820915ea9d3a5159cf072222d8ac2c72e98a78a187801fbaa5957ded44c",
+      "bytes": 10564786,
+      "role": "phone",
+      "license": "AGPL-3.0"
+    },
+    {
+      "file": "face_landmarker.task",
+      "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+      "bytes": 3758596,
+      "role": "face mesh, iris landmarks, head rotation and blendshapes",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "face_yolov8n.onnx",
+      "sha256": "eac00efc8b868d8e0b7a01d1fd69071a730edec8c6f25c8fccf7f9a897821e60",
+      "bytes": 12238336,
+      "role": "face",
+      "license": "Apache-2.0 (upstream model card); Ultralytics exporter AGPL-3.0"
+    },
+    {
+      "file": "gaze-direction.json",
+      "sha256": "7dd6bc87599d7a3adbd44982a301e755d465383bb7648c44e1ef006dc129dba1",
+      "bytes": 2158264,
+      "role": "direction classifier over MediaPipe features",
+      "license": "See model and dataset notices"
+    },
+    {
+      "file": "gaze-public.onnx",
+      "sha256": "062a1096cc7b618893d89429905f15b98436ef48eb920bf654db4a2b4d15c9ee",
+      "bytes": 4314328,
+      "role": "research gaze estimation",
+      "license": "Gaze360 Research License / MPIIFaceGaze CC-BY-NC-SA-4.0; retained notices"
+    },
+    {
+      "file": "gaze-public.json",
+      "sha256": "6dac90c3ff91bdcba2bc6f16dedb228b3565701a8992f3fac731f68f42406431",
+      "bytes": 7021,
+      "role": "research gaze calibration and provenance",
+      "license": "Gaze360 Research License / MPIIFaceGaze CC-BY-NC-SA-4.0; retained notices"
+    }
+  ],
+  "purpose": "Noncommercial research prototype for a hackathon; not a validated production proctoring system.",
+  "source_code": "https://github.com/ovverage/hackaton-kru",
+  "lineage": "The six immutable files embedded in the locally verified 0.4.16-hackathon build.",
+  "private_build_executable_sha256": "9e778326b87c1d9ac28081a3ba17755df5db9a42eaebd0a54d13a41ff7cc162f",
+  "gaze_dataset_licenses": [
+    "Gaze360 Research License",
+    "MPIIFaceGaze CC-BY-NC-SA-4.0"
+  ],
+  "excluded": [
+    "Raw datasets",
+    "Images or videos of participants",
+    "Unaccepted COCO/WIDER candidates",
+    "Credentials"
+  ]
+}
