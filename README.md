@@ -37,3 +37,23 @@ CVPR Workshops, 2017.
 
 No training photographs, videos, raw datasets or credentials are included.
 `SHA256SUMS.txt` and `model-manifest.json` identify the exact runtime files.
+
+
+## Teacher identity models
+
+`teacher-faces/` contains the separate OpenCV Zoo YuNet detector and SFace
+identity encoder used by the teacher enrolment and unlock prototype. The six
+proctoring runtime assets above are unchanged.
+
+- YuNet `face_detection_yunet_2023mar.onnx`: MIT; retained `YuNet-LICENSE.txt`.
+- SFace `face_recognition_sface_2021dec.onnx`: Apache-2.0; retained `SFace-LICENSE.txt`.
+- `teacher-face-manifest.json` records the exact upstream commit, official URLs,
+  model hashes and license hashes.
+
+Source: https://github.com/opencv/opencv_zoo/tree/47534e27c9851bb1128ccc0102f1145e27f23f98
+API reference: https://docs.opencv.org/4.13.0/d0/dd4/tutorial_dnn_face.html
+
+The application compares normalized descriptors and asks for a front/turn/front
+sequence. Its cosine and movement gates are prototype heuristics, not certified
+biometric accuracy or presentation-attack detection. No enrolled teacher images,
+descriptors, challenge frames or database exports are included in this repository.

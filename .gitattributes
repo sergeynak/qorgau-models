@@ -1,3 +1,5 @@
 *.onnx binary
 *.task binary
 gaze-*.json -text
+
+/teacher-faces/* -text
